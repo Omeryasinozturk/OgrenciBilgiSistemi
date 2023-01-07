@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
+    <Content Include="DersEkle.aspx" />
+    <Content Include="DersListesi.aspx" />
+    <Content Include="DersSil.aspx" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\dist\css\bootstrap-theme.css" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\dist\css\bootstrap-theme.min.css" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\dist\css\bootstrap.css" />
@@ -337,6 +341,13 @@
     <Content Include="DuyuruGuncelleme.aspx" />
     <Content Include="DuyuruListesi.aspx" />
     <Content Include="DuyuruSil.aspx" />
+    <Content Include="GelenMesajlar.aspx" />
+    <Content Include="GidenMesajlar.aspx" />
+    <Content Include="Grafikler.aspx" />
+    <Content Include="istatistikler.aspx" />
+    <Content Include="MesajYaz.aspx" />
+    <Content Include="NotGuncelle.aspx" />
+    <Content Include="NotListesi.aspx" />
     <Content Include="OgrenciEkle.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciSil.aspx" />
@@ -354,6 +365,27 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersEkle.aspx.cs">
+      <DependentUpon>DersEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersEkle.aspx.designer.cs">
+      <DependentUpon>DersEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersListesi.aspx.cs">
+      <DependentUpon>DersListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersListesi.aspx.designer.cs">
+      <DependentUpon>DersListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DersSil.aspx.cs">
+      <DependentUpon>DersSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersSil.aspx.designer.cs">
+      <DependentUpon>DersSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="DuyuruEkle.aspx.cs">
       <DependentUpon>DuyuruEkle.aspx</DependentUpon>
@@ -383,12 +415,61 @@
     <Compile Include="DuyuruSil.aspx.designer.cs">
       <DependentUpon>DuyuruSil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GelenMesajlar.aspx.cs">
+      <DependentUpon>GelenMesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GelenMesajlar.aspx.designer.cs">
+      <DependentUpon>GelenMesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GidenMesajlar.aspx.cs">
+      <DependentUpon>GidenMesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GidenMesajlar.aspx.designer.cs">
+      <DependentUpon>GidenMesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grafikler.aspx.cs">
+      <DependentUpon>Grafikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafikler.aspx.designer.cs">
+      <DependentUpon>Grafikler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="istatistikler.aspx.cs">
+      <DependentUpon>istatistikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="istatistikler.aspx.designer.cs">
+      <DependentUpon>istatistikler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MesajYaz.aspx.cs">
+      <DependentUpon>MesajYaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajYaz.aspx.designer.cs">
+      <DependentUpon>MesajYaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotGuncelle.aspx.cs">
+      <DependentUpon>NotGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotGuncelle.aspx.designer.cs">
+      <DependentUpon>NotGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotListesi.aspx.cs">
+      <DependentUpon>NotListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotListesi.aspx.designer.cs">
+      <DependentUpon>NotListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciEkle.aspx.cs">
       <DependentUpon>OgrenciEkle.aspx</DependentUpon>
