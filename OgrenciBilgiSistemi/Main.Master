@@ -54,11 +54,15 @@
                             <li><a href="#">Page 3</a></li>
                         </ul>--%>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-link"></i>
+                    <li class="active">
+                        <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-bell"></i>
                             Duyurular
                         </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu2">
+                            <li><a href="DuyuruListesi.aspx"><i class="glyphicon glyphicon-adjust"></i>Duyuru Listesi</a></li>
+                            <li><a href="DuyuruEkle.aspx"><i class="glyphicon glyphicon-search"></i>Duyuru Ekle</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">
