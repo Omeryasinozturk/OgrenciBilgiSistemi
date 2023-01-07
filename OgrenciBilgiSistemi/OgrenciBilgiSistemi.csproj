@@ -333,9 +333,17 @@
     <Content Include="Dosyalar1\sidebar\style4.css" />
     <Content Include="Dosyalar1\sidebar\style5.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
+    <Content Include="OgrenciEkle.aspx" />
+    <Content Include="OgrenciGuncelle.aspx" />
+    <Content Include="OgrenciSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -349,6 +357,27 @@
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEkle.aspx.cs">
+      <DependentUpon>OgrenciEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciEkle.aspx.designer.cs">
+      <DependentUpon>OgrenciEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGuncelle.aspx.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGuncelle.aspx.designer.cs">
+      <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciSil.aspx.cs">
+      <DependentUpon>OgrenciSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciSil.aspx.designer.cs">
+      <DependentUpon>OgrenciSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -451,6 +480,17 @@
     <Content Include="Dosyalar1\bootstrap-3.3.7\package.json" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\README.md" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\_config.yml" />
+    <Content Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

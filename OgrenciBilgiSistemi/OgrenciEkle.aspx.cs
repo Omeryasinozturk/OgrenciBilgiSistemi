@@ -7,13 +7,18 @@ using System.Web.UI.WebControls;
 
 namespace OgrenciBilgiSistemi
 {
-    public partial class _default : System.Web.UI.Page
+    public partial class OgrenciEkle : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Unnamed7_Click(object sender, EventArgs e)
+        {
             DataSetTableAdapters.TBL_OGRENCITableAdapter dt = new DataSetTableAdapters.TBL_OGRENCITableAdapter();
-            Repeater1.DataSource = dt.OgrenciListesi();
-            Repeater1.DataBind();
+            dt.OgrenciEkle(TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTelefon.Text, TxtOgrMail.Text, TxtOgrSifre.Text,TxtOgrFoto.Text);
+            Response.Redirect("Default.aspx");
         }
     }
 }
