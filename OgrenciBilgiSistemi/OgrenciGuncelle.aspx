@@ -43,7 +43,7 @@
             </div>
             
         </div>
-        <asp:Button runat="server" Text="Güncelle" CssClass="btn btn-primary" OnClick="Unnamed8_Click" />
+         <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Güncelle" OnClick="Button1_Click" />
 
     </form>
 

@@ -9,12 +9,17 @@ namespace OgrenciBilgiSistemi
 {
     public partial class OgrenciGuncelle : System.Web.UI.Page
     {
-        DataSetTableAdapters.TBL_OGRENCITableAdapter dt = new DataSetTableAdapters.TBL_OGRENCITableAdapter();
+        
         int id;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Page.IsPostBack==false)
+            {
+
+             
             try
             {
+                DataSetTableAdapters.TBL_OGRENCITableAdapter dt = new DataSetTableAdapters.TBL_OGRENCITableAdapter();
                  id = Convert.ToInt32(Request.QueryString["OGRID"].ToString());
 
                 TxtOgrid.Text = id.ToString();
@@ -29,12 +34,13 @@ namespace OgrenciBilgiSistemi
             {
                 TxtOgrFoto.Text = "Link Girin";
             }
-           
+            }
         }
 
-        protected void Unnamed8_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            dt.OgrenciGuncelle(TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTelefon.Text, TxtOgrMail.Text, TxtOgrSifre.Text, TxtOgrFoto.Text, id);
+            DataSetTableAdapters.TBL_OGRENCITableAdapter dt1 = new DataSetTableAdapters.TBL_OGRENCITableAdapter();
+            dt1.OgrenciGuncelleme(TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTelefon.Text, TxtOgrMail.Text, TxtOgrSifre.Text, TxtOgrFoto.Text,Convert.ToInt32(TxtOgrid.Text));
             Response.Redirect("default.aspx");
         }
     }
